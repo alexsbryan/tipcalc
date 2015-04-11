@@ -21,8 +21,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
+        billField.clearsOnBeginEditing = true
         let tip = defaults.integerForKey("defaultTip")
         let billAmount = defaults.floatForKey("defaultBill")
+        
         
         if tip >= 0
         {
@@ -75,7 +77,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onEditingBillStart(sender: AnyObject) {
-        billField.text = "";
     }
 
 }
