@@ -47,8 +47,6 @@ class ViewController: UIViewController {
 
     @IBAction func onEditingChanged(sender: AnyObject) {
         updateTipHelper()
-        
-        defaults.setObject(tipControl.selectedSegmentIndex, forKey: "defaultTip")
     }
     
     override func viewWillAppear(animated: Bool) {
